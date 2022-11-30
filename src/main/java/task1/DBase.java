@@ -10,7 +10,7 @@ public class DBase {
     private DBase() {
         try {
             Class.forName("org.sqlite.JDBC");
-            c = DriverManager.getConnection("jdbc:sqlite:one.db");
+            c = DriverManager.getConnection("jdbc:sqlite:user.db");
         } catch ( Exception e ) {
             System.err.println( e.getClass().getName() + ": " + e.getMessage() );
             System.exit(0);
